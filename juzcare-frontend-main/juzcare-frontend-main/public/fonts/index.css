@@ -1,0 +1,50 @@
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local('LineSeed'), url(/font/lineseed/LINESeedSansTH_W_He.woff) format('woff');
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local('LineSeed'), url(/font/lineseed/LINESeedSansTH_W_XBd.woff) format('woof');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local('LineSeed'), url(/font/lineseed/LINESeedSansTH_W_Bd.woff) format('woff');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local('LineSeed'), url(/font/lineseed/LINESeedSansTH_W_Rg.woff) format('woff');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local('LineSeed'), url(/font/lineseed/LINESeedSansTH_W_Th.woff) format('woff');
+   font-weight: 300;
+}
+
+
+/* @font-face {
+  font-family: 'CircularStd';
+  font-weight: 400;
+  font-style: normal;
+  src: local('CircularStd'), url('CircularStd-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 500;
+  font-style: normal;
+  src: local('CircularStd'), url('CircularStd-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CircularStd'), url('CircularStd-Bold.otf') format('opentype');
+} */

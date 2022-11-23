@@ -1,0 +1,135 @@
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local(''), url(/fonts/lineseed/LINESeedSansTH_W_He.woff) format('woff');
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local(''), url(/fonts/lineseed/LINESeedSansTH_W_XBd.woff) format('woof');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local(''), url(/fonts/lineseed/LINESeedSansTH_W_Bd.woff) format('woff');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local(''), url(/fonts/lineseed/LINESeedSansTH_W_Rg.woff) format('woff');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'LineSeed';
+   src: local(''), url(/fonts/lineseed/LINESeedSansTH_W_Th.woff) format('woff');
+   font-weight: 300;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --scrollbar-track: #f7f7f7;
+   --scrollbar-thumb: #a0a0a0;
+}
+
+.dark {
+   --scrollbar-track: #c0c0c0;
+   --scrollbar-thumb: #505050;
+}
+
+@layer utilities {
+   ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+   }
+
+   ::-webkit-scrollbar-track {
+      border-radius: 100vh;
+      background: var(--scrollbar-track);
+   }
+
+   ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb);
+      border-radius: 100vh;
+   }
+
+   ::-webkit-scrollbar-thumb:hover {
+      background: #303030;
+   }
+}
+
+@layer base {
+   h1 {
+      @apply text-xl font-bold md:text-3xl;
+   }
+   h2 {
+      @apply text-lg font-bold md:text-2xl;
+   }
+   h3 {
+      @apply text-base font-bold md:text-xl;
+   }
+   h4 {
+      @apply text-base font-bold md:text-lg;
+   }
+   input[type='text'],
+   input[type='password'],
+   textarea {
+      @apply block w-full rounded-lg border border-text-lighter p-2.5  outline-none focus:border-blue-500  focus:ring-blue-500;
+   }
+   button {
+      @apply text-base font-bold transition-colors;
+   }
+   p {
+      @apply font-secondary text-base font-normal text-text;
+   }
+   button:focus-visible {
+      @apply border-transparent outline-transparent;
+   }
+}
+
+@layer components {
+   .ellipsis {
+      @apply overflow-hidden text-ellipsis;
+   }
+}
+
+html,
+body {
+   padding: 0;
+   margin: 0;
+   font-family: 'LineSeed', sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+.test-scroll::-webkit-scrollbar {
+   width: 20px;
+}
+
+/* Track */
+.test-scroll::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
+}
+
+/* Handle */
+.test-scroll::-webkit-scrollbar-thumb {
+   background: red;
+   border-radius: 10px;
+}
+
+/* Handle on hover */
+.test-scroll::-webkit-scrollbar-thumb:hover {
+   background: #b30000;
+}
